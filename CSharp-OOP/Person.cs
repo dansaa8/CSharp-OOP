@@ -23,7 +23,7 @@ public class Person
         get => fName;
         set
         {
-            if (value.Length < 2 && value.Length > 10)
+            if (value.Length < 2 || value.Length > 10)
                 throw new ArgumentException("First name must be between 2 and 10 characters long.");
 
             fName = value;
@@ -35,7 +35,7 @@ public class Person
         get => lName;
         set
         {
-            if (value.Length < 3 && value.Length > 15)
+            if (value.Length < 3 || value.Length > 15)
             {
                 throw new ArgumentException("Last name must be between 3 and 15 characters long.");
             }
