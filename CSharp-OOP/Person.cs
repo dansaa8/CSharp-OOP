@@ -7,8 +7,15 @@ public class Person
     private int age;
     private double height;
     private double weight;
+    
+    public const int MIN_AGE = 1;
+    public const int MIN_FNAME_LENGTH = 2;
+    public const int MAX_FNAME_LENGTH = 10;
+    
+    public const int MIN_LNAME_LENGTH = 3;
+    public const int MAX_LNAME_LENGTH = 15;
 
-    public Person(string fName, string lName, int age = 0, double height = 0.0, double weight = 0.0)
+    public Person(string fName, string lName, int age = 1, double height = 0.0, double weight = 0.0)
     {
         FName = fName;
         LName = lName;
@@ -23,7 +30,7 @@ public class Person
         get => fName;
         set
         {
-            if (value.Length < 2 || value.Length > 10)
+            if (value.Length < MIN_FNAME_LENGTH || value.Length > MAX_FNAME_LENGTH)
                 throw new ArgumentException("First name must be between 2 and 10 characters long.");
 
             fName = value;
@@ -35,7 +42,7 @@ public class Person
         get => lName;
         set
         {
-            if (value.Length < 3 || value.Length > 15)
+            if (value.Length < MIN_LNAME_LENGTH || value.Length > MAX_LNAME_LENGTH)
             {
                 throw new ArgumentException("Last name must be between 3 and 15 characters long.");
             }
@@ -49,7 +56,7 @@ public class Person
         get => age;
         set
         {
-            if (value <= 0)
+            if (value < MIN_AGE)
             {
                 throw new ArgumentException("Age must be larger than 0 .");
             }

@@ -2,7 +2,7 @@ namespace CSharp_OOP;
 
 public static class PersonHandler
 {
-    public static Person CreatePerson(string fname, string lname, int age = 0, double height = 0.0, double weight = 0.0)
+    public static Person CreatePerson(string fname, string lname, int age = 1, double height = 0.0, double weight = 0.0)
     {
         return new Person(fname, lname, age, height, weight);
     }
