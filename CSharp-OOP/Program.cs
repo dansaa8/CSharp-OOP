@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using CSharp_OOP;
 using CSharp_OOP.Errors;
+using CSharp_OOP.Models.Person;
 
 Person? p1 = null;
 Person? p2 = null;
@@ -20,7 +20,7 @@ if (p1 != null)
     Console.WriteLine(p1.FName);
 }
 
-List<UserError> errors = new List<UserError>()
+List<UserError> errors = new List<UserError>
 {
     new NumericInputError(),
     new TextInputError(),

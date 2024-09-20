@@ -1,3 +1,5 @@
+using CSharp_OOP.Models.Person;
+
 namespace CSharp_OOP.Errors;
 
 public class LNameInputError : UserError

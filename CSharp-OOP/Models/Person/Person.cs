@@ -1,4 +1,4 @@
-namespace CSharp_OOP;
+namespace CSharp_OOP.Models.Person;
 
 public class Person
 {
