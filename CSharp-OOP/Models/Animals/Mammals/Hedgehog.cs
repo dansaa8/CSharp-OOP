@@ -9,6 +9,11 @@ public class Hedgehog : Animal
         NrOfSpikes = nrOfSpikes;
     }
 
+    public override string Stats()
+    {
+        return base.Stats() + $"\n{nameof(NrOfSpikes)}: {NrOfSpikes}";
+    }
+
     public override void DoSound()
     {
         Console.WriteLine("Hey");

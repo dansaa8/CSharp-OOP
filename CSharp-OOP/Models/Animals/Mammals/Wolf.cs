@@ -9,6 +9,11 @@ public class Wolf : Animal
         IsAlone = isAlone;
     }
 
+    public override string Stats()
+    {
+        return base.Stats() + $"\n{nameof(IsAlone)}: {IsAlone}";
+    }
+
     public override void DoSound()
     {
         Console.WriteLine("AWOOOOOOOOOOOOOOOOOO");

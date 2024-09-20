@@ -9,6 +9,10 @@ public class Worm : Animal
         IsPoisonous = isPoisonous;
     }
 
+    public override string Stats()
+    {
+        return base.Stats() + $"\n{nameof(IsPoisonous)}: {IsPoisonous}";
+    }
     public override void DoSound()
     {
         Console.WriteLine("TSSSSSSSSSSSS");

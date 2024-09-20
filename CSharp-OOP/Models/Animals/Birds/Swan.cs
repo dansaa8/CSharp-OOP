@@ -8,4 +8,9 @@ public class Swan : Bird
     {
         SwimSpeed = swimSpeed;
     }
+
+    public override string Stats()
+    {
+        return base.Stats() + $"\n{nameof(SwimSpeed)}: {SwimSpeed}";
+    }
 }

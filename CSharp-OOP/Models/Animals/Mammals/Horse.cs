@@ -9,6 +9,11 @@ public class Horse : Animal
         WithersHeight = withersHeight;
     }
 
+    public override string Stats()
+    {
+        return base.Stats() + $"\n{nameof(WithersHeight)}: {WithersHeight}";
+    }
+
     public override void DoSound()
     {
         Console.WriteLine("I-HA-HA-HA-HA");

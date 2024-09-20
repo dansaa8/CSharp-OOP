@@ -9,4 +9,9 @@ public class Flamingo : Bird
     {
         LegLength = legLength;
     }
+
+    public override string Stats()
+    {
+        return base.Stats() + $"\n{nameof(LegLength)}: {LegLength}";
+    }
 }

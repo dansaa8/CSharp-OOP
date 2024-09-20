@@ -9,9 +9,18 @@ public class Dog : Animal
         Breed = breed;
     }
 
+    public override string Stats()
+    {
+        return base.Stats() + $"\n{nameof(Breed)}: {Breed}";
+    }
 
     public override void DoSound()
     {
         Console.WriteLine("Woff woff");
+    }
+
+    public void DogSpecificMethod()
+    {
+        Console.WriteLine("ONLY FOR DOGS!");
     }
 }

@@ -1,4 +1,3 @@
-
 namespace CSharp_OOP.Models.Animals;
 
 public class Bird : Animal
@@ -9,6 +8,12 @@ public class Bird : Animal
     {
         WingSpan = wingSpan;
     }
+
+    public override string Stats()
+    {
+        return base.Stats() + $"\n{nameof(WingSpan)}: {WingSpan}";
+    }
+
 
     public override void DoSound()
     {
