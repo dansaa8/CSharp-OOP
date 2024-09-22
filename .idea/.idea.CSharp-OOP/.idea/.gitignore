@@ -1,0 +1,18 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/projectSettingsUpdater.xml
+/modules.xml
+/.idea.CSharp-OOP.iml
+*.DotSettings.user
+*.DotSettings
+CSharp-OOP.sln.DotSettings.user
+indexLayout.xml
+vcs.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
