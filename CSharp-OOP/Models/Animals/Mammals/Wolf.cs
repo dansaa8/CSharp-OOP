@@ -11,7 +11,7 @@ public class Wolf : Animal
 
     public override string Stats()
     {
-        return base.Stats() + $"\n{nameof(IsAlone)}: {IsAlone}";
+        return base.Stats() + $",\n{nameof(IsAlone)}: {IsAlone}";
     }
 
     public override void DoSound()

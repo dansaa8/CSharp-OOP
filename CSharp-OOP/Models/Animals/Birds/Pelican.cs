@@ -12,6 +12,6 @@ public class Pelican : Bird
 
     public override string Stats()
     {
-        return base.Stats() + $"\n{nameof(BeakLength)}: {BeakLength}";
+        return base.Stats() + $",\n{nameof(BeakLength)}: {BeakLength}";
     }
 }

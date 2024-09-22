@@ -11,7 +11,7 @@ public class Hedgehog : Animal
 
     public override string Stats()
     {
-        return base.Stats() + $"\n{nameof(NrOfSpikes)}: {NrOfSpikes}";
+        return base.Stats() + $",\n{nameof(NrOfSpikes)}: {NrOfSpikes}";
     }
 
     public override void DoSound()

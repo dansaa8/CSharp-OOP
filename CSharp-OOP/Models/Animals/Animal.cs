@@ -16,7 +16,7 @@ public abstract class Animal
 
     public virtual string Stats()
     {
-        return $"Name: {Name}, \nAge: {Age}, \nWeight: {Weight}";
+        return $"Name: {Name},\nAge: {Age},\nWeight: {Weight}";
     }
 
     public abstract void DoSound();

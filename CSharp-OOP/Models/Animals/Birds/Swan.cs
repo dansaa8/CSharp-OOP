@@ -11,6 +11,6 @@ public class Swan : Bird
 
     public override string Stats()
     {
-        return base.Stats() + $"\n{nameof(SwimSpeed)}: {SwimSpeed}";
+        return base.Stats() + $",\n{nameof(SwimSpeed)}: {SwimSpeed}";
     }
 }

@@ -11,7 +11,7 @@ public class Dog : Animal
 
     public override string Stats()
     {
-        return base.Stats() + $"\n{nameof(Breed)}: {Breed}";
+        return base.Stats() + $",\n{nameof(Breed)}: {Breed}";
     }
 
     public override void DoSound()

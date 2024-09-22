@@ -12,6 +12,6 @@ public class Flamingo : Bird
 
     public override string Stats()
     {
-        return base.Stats() + $"\n{nameof(LegLength)}: {LegLength}";
+        return base.Stats() + $",\n{nameof(LegLength)}: {LegLength}";
     }
 }

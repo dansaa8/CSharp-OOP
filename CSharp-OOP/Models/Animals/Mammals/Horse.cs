@@ -11,7 +11,7 @@ public class Horse : Animal
 
     public override string Stats()
     {
-        return base.Stats() + $"\n{nameof(WithersHeight)}: {WithersHeight}";
+        return base.Stats() + $",\n{nameof(WithersHeight)}: {WithersHeight}";
     }
 
     public override void DoSound()
